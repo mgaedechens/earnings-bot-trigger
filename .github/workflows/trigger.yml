@@ -2,7 +2,7 @@ name: Trigger Earnings Bot
 
 on:
   schedule:
-    - cron: "30 10 * * 1-5"   # 06:30 Chile winter (UTC-4) / 07:30 Chile summer (UTC-3)
+    - cron: "0 7 * * 1-5"     # 07:00 UTC: 03:00 Chile winter / 04:00 Chile summer. GitHub delays ~3hrs => llega 06-07 AM Chile, siempre antes de 9 AM
   workflow_dispatch:           # allow manual trigger too
 
 jobs:
