@@ -1,10 +1,12 @@
 name: Trigger Earnings Bot
 
 on:
-  # schedule desactivado — cron-job.org es el scheduler principal (8:00 AM Chile, sin delays)
+  # schedule desactivado — cron-job.org es el scheduler principal
   # Para reactivar: descomentar las dos líneas de abajo
+  # Hora: 8:45 AM Chile invierno (UTC-3) = 11:45 AM UTC
+  #        En verano (UTC-4) dispara a las 7:45 AM Chile
   # schedule:
-  #   - cron: "0 2 * * 1-5"
+  #   - cron: "45 11 * * 1-5"
   workflow_dispatch:           # solo manual por si se necesita
 
 jobs:
